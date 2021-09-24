@@ -1,5 +1,5 @@
 ##Reading input data (csv)
-data <- read.csv("C:/Users/Mitra/Dropbox/Dara _RA Job/Food Poisoning Paper/Results/Yelp/Cross Correlation & Graphs/Yelp_2018_cyc.csv")
+data <- read.csv("C:/Users/....csv")
 data$Date <- NULL #ignore "Date" column
 
 ##Installing libraries
@@ -32,3 +32,6 @@ corrplot(var$cos2, is.corr=FALSE)
 fviz_cos2(res.pca, choice = "var", axes = 1:2)
 options(ggrepel.max.overlaps = Inf)
 fviz_pca_var(res.pca, col.var = "cos2", gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"), repel = TRUE)
+
+#Refrences
+#http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/112-pca-principal-component-analysis-essentials/#visualization-and-interpretation
